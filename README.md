@@ -30,6 +30,6 @@ In addition, due to the differences in the image features and complexity of indu
 ### Installation
 Step1: Follow the official guide to install [Object Detection API with TensorFlow 2](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md)
 
-Step2: Download this project '''git clone https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score.git'''
+Step2: Download this project ```git clone https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score.git```
 
 ### Suggestion
