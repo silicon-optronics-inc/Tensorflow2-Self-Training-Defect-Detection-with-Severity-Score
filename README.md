@@ -13,7 +13,9 @@ In addition, due to the differences in the image features and complexity of indu
   - [Requirements](#requirements)
   - [Installation](#installation)
   - [Suggestion](#suggestion)
-  
+- [Usage](#usage)
+  - [Train](#train)
+  - [Inference](#inference)
   
 ## Getting Started
 ### Requirements
@@ -24,13 +26,18 @@ In addition, due to the differences in the image features and complexity of indu
 * numpy 1.17.4
 * object-detection 0.1
 
-
-
-
 ### Installation
 Step1: Follow the official guide to install [Object Detection API with TensorFlow 2](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md)
 
-Step2: Download this project  
+Step2: Download the project  
 ```git clone https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score.git```
 
 ### Suggestion
+
+## Usage
+### Train
+
+
+### Inference
+
+
