@@ -14,9 +14,10 @@ In addition, due to the differences in the image features and complexity of indu
   - [Installation](#installation)
 ## Getting Started
 ### Requirements
-* python 3.7
 * tensorflow 2.3
-* object-detection 0.1
 * numpy 1.17.4
+* object-detection 0.1
+* python 3.7
 
 ### Installation
+* step1: Follow the official guide to install [Object Detection API with TensorFlow 2](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md)
