@@ -14,6 +14,7 @@ In addition, due to the differences in the image features and complexity of indu
   - [Installation](#installation)
   - [Suggestion](#suggestion)
 - [Usage](#usage)
+  - [LabelImg(#labelimg)
   - [Train](#train)
   - [Inference](#inference)
   
@@ -34,12 +35,19 @@ Step2: Clone this project
 
 ### Suggestion
 Modify some setting in C:\Python36\Lib\site-packages\object_detection\model_lib_v2.py(According to the installation path)
-Replace checkpoint_max_to_keep in function train_loop() with a bigger value to keep more number of models.
-Replace max_outputs in function eager_train_step() with 0 to avoid the summary events generated while training taking up too much disk space.
+* Replace checkpoint_max_to_keep in function train_loop() with a bigger value to keep more number of models.
+* Replace max_outputs in function eager_train_step() with 0 to avoid the summary events generated while training taking up too much disk space.
 
 ## Usage
-### Train
+### LabelImg
+[LabelImg download link](https://www.dropbox.com/s/kqoxr10l3rkstqd/windows_v1.8.0.zip?dl=1)
+[LabelImg github]
 
+
+
+### Train
+Object detection training guide
+Classification training guide
 
 ### Inference
 
