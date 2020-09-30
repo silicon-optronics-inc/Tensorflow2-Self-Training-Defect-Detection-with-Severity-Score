@@ -14,7 +14,7 @@ In addition, due to the differences in the image features and complexity of indu
   - [Installation](#installation)
   - [Suggestion](#suggestion)
 - [Usage](#usage)
-  - [LabelImg(#labelimg)
+  - [LabelImg](#labelimg)
   - [Train](#train)
   - [Inference](#inference)
   
@@ -40,8 +40,9 @@ Modify some setting in C:\Python36\Lib\site-packages\object_detection\model_lib_
 
 ## Usage
 ### LabelImg
-[LabelImg download link](https://www.dropbox.com/s/kqoxr10l3rkstqd/windows_v1.8.0.zip?dl=1)
-[LabelImg github]
+Before training object detection model, one must annotate objects in images and saved them as XML files in PASCAL VOC format. Tool LabelImg is recommended.
+[LabelImg download link](https://www.dropbox.com/s/kqoxr10l3rkstqd/windows_v1.8.0.zip?dl=1)  
+[LabelImg github](https://github.com/tzutalin/labelImg)
 
 
 
