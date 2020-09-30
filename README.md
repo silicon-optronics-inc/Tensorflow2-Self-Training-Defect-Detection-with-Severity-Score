@@ -95,14 +95,14 @@ Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score
 * object-detection 0.1
 
 ### Installation
-Step1: Follow the official guide to install [Object Detection API with TensorFlow 2](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md)
+Step1: Follow the official guide to install [Object Detection API with TensorFlow 2](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md).
 
 Step2: Clone the repository
 ```git clone https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score.git```
 
 ### Suggestion
 Modify some setting in C:\Python36\Lib\site-packages\object_detection\model_lib_v2.py (According to the installation path)
-* Replace checkpoint_max_to_keep in function train_loop() with a bigger value to keep more number of models during training.
+* Replace checkpoint_max_to_keep in function train_loop() with a bigger value to keep more number of models during training..
 * Replace max_outputs in function eager_train_step() with 0 to avoid the summary events generated while training taking up too much disk space.
 
 ## Usage
@@ -118,5 +118,5 @@ Before training the object detection model, the objects in the images must be an
 
 ### Inference
 Step1: Copy object detection and classification models from [train](#train) to the folder where one want to place the models.  
-Step2: Set the model path and some necessary parameters in the configuration for inference. For more detail, please refer to [defect detection README.md](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/defect_detection/README.md)
+Step2: Set the model path and some necessary parameters in the configuration for inference. For more detail, please refer to [defect detection README.md](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/defect_detection/README.md).
 
