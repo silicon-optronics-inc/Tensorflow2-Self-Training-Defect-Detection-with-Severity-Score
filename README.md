@@ -9,8 +9,9 @@ In addition, due to the differences in the image features and complexity of indu
 ![image](https://github.com/silicon-optronics-inc/Object_detection_with_severity_score/blob/master/doc/demo.gif)  
 
 ## Table of Contents
- [Defect Detection With Severity Score](#defect-detection-with-severity-score)
-
+-[Defect Detection With Severity Score](#defect-detection-with-severity-score)
+ -[Table of Contents](#table-of-contents)
+ 
 ## 1 Environment
 * python 3.7
 * tensorflow 2.3
