@@ -40,15 +40,15 @@ Modify some setting in C:\Python36\Lib\site-packages\object_detection\model_lib_
 
 ## Usage
 ### LabelImg
-Before training object detection model, one must annotate objects in images and saved them as XML files in PASCAL VOC format. Tool LabelImg is recommended.
+Before training object detection model, one must annotate objects in images and saved them as XML files in PASCAL VOC format. Tool LabelImg is recommended.  
 [LabelImg download link](https://www.dropbox.com/s/kqoxr10l3rkstqd/windows_v1.8.0.zip?dl=1)  
 [LabelImg github](https://github.com/tzutalin/labelImg)
 
 
 
 ### Train
-Object detection training guide
-Classification training guide
+[Object detection training guide](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/object_detection/README.md)
+[Classification training guide](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/classification/README.md)
 
 ### Inference
 
