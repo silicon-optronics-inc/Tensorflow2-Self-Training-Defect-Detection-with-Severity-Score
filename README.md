@@ -13,7 +13,7 @@ In addition, due to the differences in the image features and complexity of indu
   - [Requirements](#requirements)
   - [Installation](#installation)
 ## Getting Started
-### Requirement
+### Requirements
 * python 3.7
 * tensorflow 2.3
 * object-detection 0.1
