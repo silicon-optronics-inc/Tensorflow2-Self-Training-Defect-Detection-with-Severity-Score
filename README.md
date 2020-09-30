@@ -29,10 +29,13 @@ In addition, due to the differences in the image features and complexity of indu
 ### Installation
 Step1: Follow the official guide to install [Object Detection API with TensorFlow 2](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md)
 
-Step2: Download the project  
+Step2: Clone this project  
 ```git clone https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score.git```
 
 ### Suggestion
+Modify some setting in C:\Python36\Lib\site-packages\object_detection\model_lib_v2.py(According to the installation path)
+Replace checkpoint_max_to_keep in function train_loop() with a bigger value to keep more number of models.
+Replace max_outputs in function eager_train_step() with 0 to avoid the summary events generated while training taking up too much disk space.
 
 ## Usage
 ### Train
