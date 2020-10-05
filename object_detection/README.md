@@ -37,7 +37,8 @@ To enable self-training, unlabeled images should be put under 'object_detection/
 Double click object_detection/train/run.bat.
 
 ## Export Model
-After finishing training, copy 1. pascal_label_map.pbtxt,  
+After finishing training, copy  
+1. pascal_label_map.pbtxt,  
 2. Config,  
 3. the model wanted under 'object_detection/train/train/', to '/object_detection/export_model/input/',  
 then edit the model step in '/object_detection/export_model/input/checkpoint'.  
