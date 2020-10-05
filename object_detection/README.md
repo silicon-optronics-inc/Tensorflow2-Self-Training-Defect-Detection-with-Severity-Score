@@ -14,10 +14,10 @@ To enable self-training, unlabeled images should be put under 'object_detection/
 
 ## Basic Parameters Setting
 ### object_detection/train/run.bat
-```
+
 * mode: Types of training mode. {0: Training without evaluating, 1: Training with gpu and evaluating with cpu, 2: Training with gpu, evaluating with cpu, and auto-label while meet the requirement, 3: Evaluate all models}
 * pipeline_config: Name of config file.
-```
+
 
 ### object_detection/train/input/4_setting/config
 ```
@@ -31,3 +31,5 @@ To enable self-training, unlabeled images should be put under 'object_detection/
 
 
 ## Advanced Parameters Setting (Optional)
+### object_detection/train/tool/control_main.py
+gpu_env["CUDA_VISIBLE_DEVICES"]
