@@ -61,4 +61,4 @@ Step 2. Open 'inference/config.ini' and set some parameters
 * box_num: The number of objects be shown on image.
 * gpu_memory_fraction: A value between 0 and 1 that indicates what fraction of the available GPU memory to pre-allocate for each process.
 
-Step 3. Run 'inference/run.bat', result will be saved under log_path just specify.
+Step 3. Run 'inference/run.bat', result will be saved under log_path just specified.
