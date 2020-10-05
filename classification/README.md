@@ -39,7 +39,7 @@ Step 1. Open 'inference/config.ini' and set some parameters
 * img_path: Path to image directory be detected.
 * classes: Name of each categories, seperated by comma. 
 * log_path: Path to predicted output folder.
-* model_path: Path to model from [Start Training](#Start Training).
+* model_path: Path to model from [Start Training](#start-training).
 * model_name: Model name.
 * model_width: Model width while training.
 * model_height: Model height while training.
