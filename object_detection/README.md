@@ -14,22 +14,24 @@ To enable self-training, unlabeled images should be put under 'object_detection/
 
 ## Basic Parameters Setting
 ### object_detection/train/run.bat
-
-* mode: Types of training mode. {0: Training without evaluating, 1: Training with gpu and evaluating with cpu, 2: Training with gpu, evaluating with cpu, and auto-label while meet the requirement, 3: Evaluate all models}
-* pipeline_config: Name of config file.
-
+```
+- mode: Types of training mode. {0: Training without evaluating, 1: Training with gpu and evaluating with cpu, 2: Training with gpu, evaluating with cpu, and auto-label while meet the requirement, 3: Evaluate all models}
+- pipeline_config: Name of config file.
+```
 
 ### object_detection/train/input/4_setting/config
 ```
-* num_classes: The number of object types to be detected.
-* fixed_shape_resizer: The height and width of model you want.
-* train_input_reader\tf_record_input_reader\input_path: Path to training tfrecord. '.record-?????-of-00010' should be added since sharded tfrecord are used. For example, "D:\\object_detection\\train\\input\\1_train_data\\tfrecord\\1_train_data.record-?????-of-00010". 
-* eval_input_reader\tf_record_input_reader\input_path: Path to evaluating tfrecord. '.record-?????-of-00010' should be added.
-* label_map_path: Path to pascal_label_map.pbtxt.
+- num_classes: The number of object types to be detected.
+- fixed_shape_resizer: The height and width of model you want.
+- train_input_reader\tf_record_input_reader\input_path: Path to training tfrecord. '.record-?????-of-00010' should be added since sharded tfrecord are used. For example, "D:\\object_detection\\train\\input\\1_train_data\\tfrecord\\1_train_data.record-?????-of-00010". 
+- eval_input_reader\tf_record_input_reader\input_path: Path to evaluating tfrecord. '.record-?????-of-00010' should be added.
+- label_map_path: Path to pascal_label_map.pbtxt.
 ```
-
-
 
 ## Advanced Parameters Setting (Optional)
 ### object_detection/train/tool/control_main.py
-gpu_env["CUDA_VISIBLE_DEVICES"]
+```
+- first_env["CUDA_VISIBLE_DEVICES"]: Main hardware setting used for training. '0' means use the first gpu, and multi-gpu can be used by setting the parameter to '0, 1, ...'
+- second_env["CUDA_VISIBLE_DEVICES"]: Hardware setting for evaluating while training. '-1' means use cpu.
+- eval_index: Evaluation metric used as monitoring indicator to start auto-labeling. More detail can be found on [COCO evaluation metrics](https://cocodataset.org/#detection-eval).
+```
