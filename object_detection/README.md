@@ -43,4 +43,4 @@ After finishing training, copy
 3. the model wanted under 'object_detection/train/train/',  
 
 to '/object_detection/export_model/input/', then edit the model step in '/object_detection/export_model/input/checkpoint'.  
-Double click '/object_detection/export_model/export_inference_graph.bat', model will be exported to output folder.
+Double click '/object_detection/export_model/export_inference_graph.bat', model will be exported to the output folder.
