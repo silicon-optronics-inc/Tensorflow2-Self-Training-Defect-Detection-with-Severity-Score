@@ -2,7 +2,7 @@
 This document will go through how to train the classification model and use it for inference.
 
 ## Data Preparation
-Firstly, one must assign different categories of pictures to different folders. That is, one can create an folder name 'data/' and create 6 folders corresponding to the category name under it if there are 6 categories to be classified.
+Firstly, one must assign different categories of pictures to different folders. That is, one can create an folder name 'data/' and create 6 folders under it corresponding to the category name if there are 6 categories to be classified.
 
 ## Parameters
 Open 'train/config.ini'
@@ -31,15 +31,15 @@ Open 'train/config.ini'
 * DEVICES: Hardware setting used for training. '0' means use the first gpu, and multi-gpu can be used by setting the parameter to '0, 1, ...'
 
 ## Start Training
-Run 'train/train.bat'.
+Run 'train/train.bat', models will be generated under 'train/h5/'
 
 ## Inference
-To check how well is the classification model, only two steps are needed.  
+To check how well the classification model is, only two steps are needed.  
 Step 1. Open 'inference/config.ini' and set some parameters
 * img_path: Path to image directory be detected.
 * classes: Name of each categories, seperated by comma. 
 * log_path: Path to predicted output folder.
-* model_path: Path to model from [Export Model](#export-model).
+* model_path: Path to model from [Start Training](#Start Training).
 * model_name: Model name.
 * model_width: Model width while training.
 * model_height: Model height while training.
