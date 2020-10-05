@@ -7,7 +7,7 @@ Firstly, one must assign different categories of pictures to different folders. 
 ## Parameters
 Open 'train/config.ini'
 ### Basic Parameters Setting
-* train_img_path: Path to train images [folder](#data-preparation)
+* train_img_path: Path to train images from [Data Preparation](#data-preparation).
 * classes_num: Number of categories to be classified.
 * project_name: Project name.
 * model_width: Model width.
