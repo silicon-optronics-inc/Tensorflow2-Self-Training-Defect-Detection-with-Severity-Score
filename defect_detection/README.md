@@ -17,7 +17,7 @@ Step 2. Open './config.ini' and set some parameters
 * cls_model_height: Classification model height during training.
 * cls_model_channel: Classification model channel during training.
 * threshold: Threshold of confidence score that objects will be shown when box_num is set to None.
-* box_num: The number of objects to be shown on image.
+* box_num: The number of objects to be displayed on the image.
 * gpu_memory_fraction: A value between 0 and 1 that indicates what fraction of the available GPU memory to pre-allocate for each process.
 
 Step 3. Run './run.bat', result will be saved under log_path just specified.
