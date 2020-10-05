@@ -15,7 +15,7 @@ To enable self-training, unlabeled images should be put under 'train/input/3_unl
 ## Parameters
 ### Basic Parameters Setting
 #### train/run.bat
-* mode: Types of training mode. {0: Training without evaluating, 1: Training with gpu and evaluating with cpu, 2: Training with gpu, evaluating with cpu, and auto-label when [eval_index](#train/tool/control_main.py) meets the requirement [eval_threshold](#train/tool/control_main.py), 3: Evaluate all models}
+* mode: Types of training mode. {0: Training without evaluating, 1: Training with gpu and evaluating with cpu, 2: Training with gpu, evaluating with cpu, and auto-label when [eval_index](#advanced-parameters-setting-(optional)) meets the requirement [eval_threshold](#train/tool/control_main.py), 3: Evaluate all models}
 * pipeline_config: Name of config file.
 
 #### train/input/4_setting/config
@@ -40,7 +40,7 @@ Run 'train/run.bat', models will be generated under 'train/train/'.
 ## Export Model
 After finishing training, copy    
 1. Config,  
-2. the model wanted from [Start Training](#start-training)
+2. The model wanted from [Start Training](#start-training)
 
 to 'export_model/input/', then edit the model step in 'export_model/input/checkpoint'.  
 Run 'export_model/export_inference_graph.bat', model will be exported to the output folder. (The model be used later is actually the folder 'export_model/output/saved_model')
