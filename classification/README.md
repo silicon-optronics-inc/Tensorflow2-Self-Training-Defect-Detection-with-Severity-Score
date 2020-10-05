@@ -45,4 +45,4 @@ Step 1. Open 'inference/config.ini' and set some parameters
 * model_height: Model height while training.
 * model_channel: Model channel while training.
 
-Step 2. run 'inference.bat'
+Step 2. run 'inference.bat', result will be saved under log_path just specified.
