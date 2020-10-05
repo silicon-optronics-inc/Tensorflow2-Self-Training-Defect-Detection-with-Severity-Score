@@ -2,7 +2,7 @@
 This document will go through how to train the object detection model and use it for inference.
 
 ## Data Preparation
-Four types of files are needed. First two could be get if follow the instructions of [LabelImg github](https://github.com/tzutalin/labelImg). The last two files could be found under 'train/input/4_setting/'.
+Four types of files are needed. First two could be get through followomg the instructions of [LabelImg github](https://github.com/tzutalin/labelImg). The last two files could be found under 'train/input/4_setting/'.
 1. Images
 2. XML, follow PASCAL VOC format.
 3. pascal_label_map.pbtxt, contains the id and name of the object to be detected. THe name and number of items should be identical to those in xml.
