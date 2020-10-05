@@ -38,13 +38,12 @@ To enable self-training, unlabeled images should be put under 'train/input/3_unl
 Run 'train/run.bat', models will be generated under 'train/train/'.
 
 ## Export Model
-After finishing training, copy  
-1. pascal_label_map.pbtxt,  
-2. Config,  
-3. the model wanted from [Start Training](#start-training)
+After finishing training, copy    
+1. Config,  
+2. the model wanted from [Start Training](#start-training)
 
 to 'export_model/input/', then edit the model step in 'export_model/input/checkpoint'.  
-Run 'export_model/export_inference_graph.bat', model will be exported to the output folder.
+Run 'export_model/export_inference_graph.bat', model will be exported to the output folder. (The model be used later is actually the folder 'export_model/output/saved_model')
 
 ## Inference
 To check how well the object detection model is, only three steps are needed.  
