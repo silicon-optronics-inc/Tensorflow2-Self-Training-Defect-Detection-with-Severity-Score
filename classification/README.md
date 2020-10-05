@@ -2,7 +2,8 @@
 This document will go through how to train the classification model and use it for inference.
 
 ## Data Preparation
-Firstly, one must assign different categories of pictures to different folders. That is, one can create an folder name 'data/' and create 6 folders under it corresponding to the category name if there are 6 categories to be classified.
+Firstly, one must assign different categories of pictures to different folders. That is, one can create an folder name 'data/' and create N folders under it corresponding to the category name if there are N categories to be classified.
+To train a model that can give a severity score, it is recommended to name the folder from 1 to N, and move the images to the corresponding folders in order from light to heavy.
 
 ## Parameters
 Open 'train/config.ini'
