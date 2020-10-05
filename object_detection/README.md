@@ -45,3 +45,20 @@ After finishing training, copy
 
 to 'export_model/input/', then edit the model step in 'export_model/input/checkpoint'.  
 Double click 'export_model/export_inference_graph.bat', model will be exported to the output folder.
+
+## Inference
+If one want to check how well is the object detection model, only three steps are needed.
+Step 1. Copy pascal_label_map.pbtxt to 'inference/'.
+Step 2. Open 'inference/config.ini' and set some parameters
+* img_path: Path to image directory be detected.
+* log_path: Path to predicted output folder.
+* model_path: Path to model from [Export Model](#export-model).
+* model_name: Model name.
+* model_width: Model width while training.
+* model_height: Model height while training.
+* model_channel: Model channel while training, should be set to 3.
+* threshold: Threshold of confidence score that objects will be shown when box_num is set to None.
+* box_num: The number of objects be shown on image.
+* gpu_memory_fraction: A value between 0 and 1 that indicates what fraction of the available GPU memory to pre-allocate for each process.
+
+Step 3. Run 'inference/run.bat', result will be saved under log_path just specify.
