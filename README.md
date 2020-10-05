@@ -87,10 +87,10 @@ Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score
 ```
 
 ## Flow of Defect Detection 
-This project first uses object detection to find out the coordinates and types of defects, then crops the defects according to the types and sends them to the corresponding classification model in the next step, and let the classification model give scores according to the severity of the defects, and finally mark the type, severity and location of each defect on the picture.  
+This project first uses object detection to find out the coordinates and types of defects, and then crops the defects according to the type and sends them to the corresponding classification model in the next step, and let the classification model give scores according to the severity of the defects, and finally mark the type, severity and location of each defect on the picture.  
 Some of the defects that do not care about the severity can skip the classification model and directly use the object detection score.  
 
-To define own flow of cropping and classification, please modify the function 'predict_cls_img()' in './inference.py'.
+To define own flow of cropping and classification, please modify the function 'predict_cls_img()' in 'defect_detection/inference.py'.
 
 ![Flow Chart of_Defect Detection With Severity Score](https://github.com/silicon-optronics-inc/Object_detection_with_severity_score/blob/master/doc/Flow_Chart_of_Defect_Detection_With_Severity_Score.png)  
 
