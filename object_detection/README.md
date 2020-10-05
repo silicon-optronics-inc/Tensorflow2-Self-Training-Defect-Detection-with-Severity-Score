@@ -15,7 +15,7 @@ To enable self-training, unlabeled images should be put under 'train/input/3_unl
 ## Parameters
 ### Basic Parameters Setting
 #### train/run.bat
-* mode: Types of training mode. {0: Training without evaluating, 1: Training with gpu and evaluating with cpu, 2: Training with gpu, evaluating with cpu, and auto-label when [eval_index](#advanced-parameters-setting-(optional)) meets the requirement [eval_threshold](#train/tool/control_main.py), 3: Evaluate all models}
+* mode: Types of training mode. {0: Training without evaluating, 1: Training with gpu and evaluating with cpu, 2: Training with gpu, evaluating with cpu, and auto-label when [eval_index](#traintoolcontrol_mainpy) meets the requirement [eval_threshold](#traintoolcontrol_mainpy), 3: Evaluate all models}
 * pipeline_config: Name of config file.
 
 #### train/input/4_setting/config
