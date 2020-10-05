@@ -1,2 +1,2 @@
-python inference_v1.py
+python inference.py
 pause
