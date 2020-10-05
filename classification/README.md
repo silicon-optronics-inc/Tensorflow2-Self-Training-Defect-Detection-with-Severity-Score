@@ -31,7 +31,7 @@ Open 'train/config.ini'
 * DEVICES: Hardware setting used for training. '0' means use the first gpu, and multi-gpu can be used by setting the parameter to '0, 1, ...'
 
 ## Start Training
-Run 'train/train.bat', models will be generated under 'train/h5/'
+Run 'train/train.bat', models will be generated under 'train/h5/'.
 
 ## Inference
 To check how well the classification model is, only two steps are needed.  
