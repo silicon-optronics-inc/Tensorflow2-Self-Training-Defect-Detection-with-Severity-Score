@@ -13,14 +13,14 @@ Open 'train/config.ini'
 * model_width: Model width.
 * model_height: Model height.
 * model_channel: Model channel, should be set to 3 if one use RGB images, 1 for grayscale.
-* model_type: Model structrue to be trained.
 * batch_size: Batch size while training.
+* model_type: Model structrue to be trained.
 * initial_epoch: Step of pretrained model to load and keep training. 
 
 ### Advanced Parameters Setting (Optional)
+* save_model_type: When to save model.
 * epoch: Number of epoch to stop training.
 * validation_split_rate: Proportion of data divided into validation set.
-* save_model_type: When to save model.
 * optimizer: Optimizer be used.
 * learning_rate: Learning rate.
 * monitor: Evaluation metric be used. 
@@ -28,3 +28,4 @@ Open 'train/config.ini'
 * rotation_range: rotation_range used in [keras.preprocessing.image.ImageDataGenerator](https://keras.io/api/preprocessing/image/).
 * vertical_flip: vertical_flip used in [keras.preprocessing.image.ImageDataGenerator](https://keras.io/api/preprocessing/image/).
 * horizontal_flip: horizontal_flip used in [keras.preprocessing.image.ImageDataGenerator](https://keras.io/api/preprocessing/image/).
+* DEVICES: Hardware setting used for training. '0' means use the first gpu, and multi-gpu can be used by setting the parameter to '0, 1, ...'
