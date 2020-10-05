@@ -1,5 +1,5 @@
-# Object Detection Training Guide
-This document will explain how to use these programs to train the model and the parameters that need to be adjusted.
+# Object Detection Tool Guide
+This document will go through how to train the object detection model and use it for inference.
 
 ## Data Preparation
 Four types of files are needed. First two could be get if follow the instructions of [LabelImg github](https://github.com/tzutalin/labelImg). The last two files could be found under 'train/input/4_setting/'.
@@ -47,7 +47,7 @@ to 'export_model/input/', then edit the model step in 'export_model/input/checkp
 Run 'export_model/export_inference_graph.bat', model will be exported to the output folder.
 
 ## Inference
-If one want to check how well is the object detection model, only three steps are needed.  
+To check how well is the object detection model, only three steps are needed.  
 Step 1. Copy pascal_label_map.pbtxt to 'inference/'.
 Step 2. Open 'inference/config.ini' and set some parameters
 * img_path: Path to image directory be detected.
