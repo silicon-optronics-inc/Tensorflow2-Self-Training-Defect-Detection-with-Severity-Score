@@ -1,8 +1,12 @@
 # Defect Detection Tool Guide
 This document will go through how to use the models get from [Object detection training guide](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/object_detection/README.md) and [Classification training guide](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/classification/README.md) to perform defect detection with severity score.
 
-## Getting Started
-Step 1. Copy pascal_label_map.pbtxt to current folder.
+
+
+
+
+## Inference
+Step 1. Copy pascal_label_map.pbtxt to current folder.  
 Step 2. Open './config.ini' and set some parameters 
 * img_path: Path to directory of image be detected.
 * log_path: Path to predicted output folder.
@@ -19,4 +23,6 @@ Step 2. Open './config.ini' and set some parameters
 * box_num: The number of objects be shown on image.
 * gpu_memory_fraction: A value between 0 and 1 that indicates what fraction of the available GPU memory to pre-allocate for each process.
 
-Step 6. Run './run.bat', result will be saved under log_path just specified.
+Step 3. Run './run.bat', result will be saved under log_path just specified.
+
+
