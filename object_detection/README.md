@@ -48,7 +48,7 @@ Run 'export_model/export_inference_graph.bat', model will be exported to the out
 
 ## Inference
 To check how well is the object detection model, only three steps are needed.  
-Step 1. Copy pascal_label_map.pbtxt to 'inference/'.
+Step 1. Copy pascal_label_map.pbtxt to 'inference/'.  
 Step 2. Open 'inference/config.ini' and set some parameters
 * img_path: Path to image directory be detected.
 * log_path: Path to predicted output folder.
