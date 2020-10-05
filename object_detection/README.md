@@ -57,7 +57,7 @@ Step 2. Open 'inference/config.ini' and set some parameters
 * model_height: Model height while training.
 * model_channel: Model channel while training, usually is 3 if [convert_to_grayscale](https://github.com/tensorflow/models/blob/master/research/object_detection/protos/image_resizer.proto) is not set to True during training.
 * threshold: Threshold of confidence score that objects will be shown when box_num is set to None.
-* box_num: The number of objects be shown on image.
+* box_num: The number of objects to be shown on image.
 * gpu_memory_fraction: A value between 0 and 1 that indicates what fraction of the available GPU memory to pre-allocate for each process.
 
 Step 3. Run 'inference/run.bat', result will be saved under log_path just specified.
