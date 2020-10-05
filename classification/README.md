@@ -29,3 +29,20 @@ Open 'train/config.ini'
 * vertical_flip: vertical_flip used in [keras.preprocessing.image.ImageDataGenerator](https://keras.io/api/preprocessing/image/).
 * horizontal_flip: horizontal_flip used in [keras.preprocessing.image.ImageDataGenerator](https://keras.io/api/preprocessing/image/).
 * DEVICES: Hardware setting used for training. '0' means use the first gpu, and multi-gpu can be used by setting the parameter to '0, 1, ...'
+
+## Start Training
+Run 'train/train.bat'.
+
+## Inference
+To check how well is the classification model, only two steps are needed.  
+Step 1. Open 'inference/config.ini' and set some parameters
+* img_path: Path to image directory be detected.
+* classes: Name of each categories, seperated by comma. 
+* log_path: Path to predicted output folder.
+* model_path: Path to model from [Export Model](#export-model).
+* model_name: Model name.
+* model_width: Model width while training.
+* model_height: Model height while training.
+* model_channel: Model channel while training.
+
+Step 2. run 'inference.bat'
