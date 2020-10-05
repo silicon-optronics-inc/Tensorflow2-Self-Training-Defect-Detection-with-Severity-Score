@@ -1,7 +1,7 @@
 # Defect Detection Tool Guide
 This document will go through how to use the models get from [Object detection training guide](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/object_detection/README.md) and [Classification training guide](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/classification/README.md) to perform defect detection with severity score.
 
-## Flow Chart
+## Flow of Defect Detection 
 This project first uses object detection to find out the coordinates and types of defects, then crops the defects according to the types and sends them to the corresponding classification model in the next step, and let the classification model give scores according to the severity of the defects, and finally mark the type, severity and location of each defect on the picture.  
 Some of the defects that do not care about the severity can skip the classification model and directly use the object detection score.
 
