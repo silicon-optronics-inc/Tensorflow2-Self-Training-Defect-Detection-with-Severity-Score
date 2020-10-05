@@ -105,7 +105,7 @@ def main(_):
         csv_input = os.path.join(FLAGS.input_dir, folder, 'tfrecord', folder+'.csv')
         image_dir = os.path.join(FLAGS.input_dir, folder, 'img')
         output_path = os.path.join(FLAGS.input_dir, folder, 'tfrecord', folder+'.record')
-        pbtxt_path = os.path.join(FLAGS.input_dir, '4_setting/object_label_map.pbtxt')
+        pbtxt_path = os.path.join(FLAGS.input_dir, '4_setting/pascal_label_map.pbtxt')
         
         num_shards=10
         path = os.path.join(os.getcwd(), image_dir)
