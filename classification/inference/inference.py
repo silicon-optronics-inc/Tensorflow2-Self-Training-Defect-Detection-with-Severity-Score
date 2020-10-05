@@ -31,7 +31,7 @@ def read_config():
     DATE = datetime.date.today().strftime('%Y%m%d')
 
     global IMAGE_PATH, CLASSES
-    IMAGE_PATH = config.get('Image', 'image_path')
+    IMAGE_PATH = config.get('Image', 'img_path')
     CLASSES = config.get('Image', 'classes')
     CLASSES = [i.strip() for i in CLASSES.split(',')]
     
