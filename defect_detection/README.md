@@ -18,4 +18,5 @@ Step 2. Open './config.ini' and set some parameters
 * threshold: Threshold of confidence score that objects will be shown when box_num is set to None.
 * box_num: The number of objects be shown on image.
 * gpu_memory_fraction: A value between 0 and 1 that indicates what fraction of the available GPU memory to pre-allocate for each process.
-Step 3. Run './run.bat', result will be saved under log_path just specified.
+
+Step 6. Run './run.bat', result will be saved under log_path just specified.
