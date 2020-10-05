@@ -35,7 +35,7 @@ To enable self-training, unlabeled images should be put under 'train/input/3_unl
 * IOU_threshold: The IOU threshold used to determine the confidence score threshold of each object during automatic labeling.
 
 ## Start Training
-Double click 'train/run.bat'.
+Run 'train/run.bat'.
 
 ## Export Model
 After finishing training, copy  
@@ -44,10 +44,10 @@ After finishing training, copy
 3. the model wanted under 'train/train/',  
 
 to 'export_model/input/', then edit the model step in 'export_model/input/checkpoint'.  
-Double click 'export_model/export_inference_graph.bat', model will be exported to the output folder.
+Run 'export_model/export_inference_graph.bat', model will be exported to the output folder.
 
 ## Inference
-If one want to check how well is the object detection model, only three steps are needed.
+If one want to check how well is the object detection model, only three steps are needed.  
 Step 1. Copy pascal_label_map.pbtxt to 'inference/'.
 Step 2. Open 'inference/config.ini' and set some parameters
 * img_path: Path to image directory be detected.
