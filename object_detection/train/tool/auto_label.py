@@ -41,7 +41,7 @@ def set_parameter():
     
     
     global PBTXT_PATH, TRAIN_IMG_DIR, TRAIN_XML_DIR, EVAL_IMG_DIR, EVAL_XML_DIR, UNLABELED_IMG_DIR, UNLABELED_XML_DIR
-    PBTXT_PATH = os.path.join(FLAGS.input_dir, '4_setting', 'object_label_map.pbtxt')
+    PBTXT_PATH = os.path.join(FLAGS.input_dir, '4_setting', 'pascal_label_map.pbtxt')
     TRAIN_IMG_DIR = os.path.join(FLAGS.input_dir, '1_train_data', 'img')
     TRAIN_XML_DIR = os.path.join(FLAGS.input_dir, '1_train_data', 'xml')
     EVAL_IMG_DIR = os.path.join(FLAGS.input_dir, '2_eval_data', 'img')
