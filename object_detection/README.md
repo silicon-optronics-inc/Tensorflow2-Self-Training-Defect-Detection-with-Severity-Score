@@ -40,6 +40,7 @@ Double click object_detection/train/run.bat.
 After finishing training, copy  
 1. pascal_label_map.pbtxt,  
 2. Config,  
-3. the model wanted under 'object_detection/train/train/', to '/object_detection/export_model/input/',  
+3. the model wanted under 'object_detection/train/train/',  
+to '/object_detection/export_model/input/',  
 then edit the model step in '/object_detection/export_model/input/checkpoint'.  
 Double click '/object_detection/export_model/export_inference_graph.bat'.
