@@ -35,13 +35,13 @@ To enable self-training, unlabeled images should be put under 'train/input/3_unl
 * IOU_threshold: The IOU threshold used to determine the confidence score threshold of each object during automatic labeling.
 
 ## Start Training
-Run 'train/run.bat'.
+Run 'train/run.bat', models will be generated under 'train/train/'.
 
 ## Export Model
 After finishing training, copy  
 1. pascal_label_map.pbtxt,  
 2. Config,  
-3. the model wanted under 'train/train/',  
+3. the model wanted from [Start Training](#start-training)
 
 to 'export_model/input/', then edit the model step in 'export_model/input/checkpoint'.  
 Run 'export_model/export_inference_graph.bat', model will be exported to the output folder.
