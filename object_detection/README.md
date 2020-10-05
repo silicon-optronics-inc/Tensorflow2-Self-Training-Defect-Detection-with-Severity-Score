@@ -35,3 +35,5 @@ To enable self-training, unlabeled images should be put under 'object_detection/
 - second_env["CUDA_VISIBLE_DEVICES"]: Hardware setting for evaluating while training. '-1' means use cpu.
 - eval_index: Evaluation metric used as monitoring indicator to start auto-labeling. More detail can be found on [COCO evaluation metrics](https://cocodataset.org/#detection-eval).
 ```
+
+[COCO evaluation metrics](https://cocodataset.org/#detection-eval).
