@@ -36,7 +36,7 @@ Run 'train/train.bat', models will be generated under 'train/h5/'.
 ## Inference
 To check how well the classification model is, only two steps are needed.  
 Step 1. Open 'inference/config.ini' and set some parameters
-* img_path: Path to image directory be detected.
+* img_path: Path to directory of images be classified.
 * classes: Name of each categories, seperated by comma. 
 * log_path: Path to predicted output folder.
 * model_path: Path to model from [Start Training](#start-training).
