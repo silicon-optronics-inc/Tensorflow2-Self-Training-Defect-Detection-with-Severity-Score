@@ -49,11 +49,6 @@ def read_config():
     if not os.path.exists(LOG_PATH):
         os.makedirs(LOG_PATH)
     
-    
-    global THRESHOLD
-    THRESHOLD = config.getfloat('Other_Setting', 'threshold')
-
-
     global EXT
     EXT = ['jpeg','JPEG','jpg','JPG','png','PNG','bmp','BMP','tif','TIF','tiff','TIFF']
 
