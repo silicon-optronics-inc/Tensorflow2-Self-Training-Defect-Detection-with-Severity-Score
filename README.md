@@ -101,7 +101,7 @@ Step2: Clone the repository
 ```git clone https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score.git```
 
 ### Suggestion
-Modify some setting in C:\Python36\Lib\site-packages\object_detection\model_lib_v2.py (According to the installation path).
+Modify some setting in model_lib_v2.py (Usually under C:\Python36\Lib\site-packages\object_detection).
 * Replace checkpoint_max_to_keep in function train_loop() with a bigger value to keep more number of models during training.
 * Replace max_outputs in function eager_train_step() with 0 to avoid the summary events generated while training taking up too much disk space.
 
