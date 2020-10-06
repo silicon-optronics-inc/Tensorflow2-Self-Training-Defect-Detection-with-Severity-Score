@@ -130,3 +130,5 @@ Before starting training the object detection model, the objects in the images m
 Step1: Copy object detection and classification models from [train](#train) to the folder where one want to place the models.  
 Step2: Open './defect_detection', set the model path and some necessary parameters in the configuration for inference. For more information, please refer to [defect detection README.md](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/defect_detection/README.md).
 
+## Acknowledgements
+[Google object detection api](https://github.com/tensorflow/models/tree/master/research/object_detection)
