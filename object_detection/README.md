@@ -69,7 +69,7 @@ Before starting, please enter 'site-packages' folder under the path where python
 Step 1. Create a python file with self-defined keras model structure under '.\tensorflow\python\keras\applications'.  
 Step 2. Create a folder with '\__init_.py' inside under '.\tensorflow\keras\applications'.  
 Step 3. Open '.\tensorflow\keras\applications\\_init\_.py', then import model and folder from Step1 and Step2.  
-Step 4. Open '.\tensorflow\python\keras\api\_v1\keras\applications\\_init\\_.py' and import model from Step1.  
+Step 4. Open '.\tensorflow\python\keras\api\_v1\keras\applications\\_init\_.py' and import model from Step1.  
 Step 5. Create a python file under '.\object_detection\models\keras_models' that the function return the model from Step3.  
 Step 6. Create a feature extractor file under '.\object_detection\models' that import function from Step5.  
 Step 7. Open '.\object_detection\builders\model_builder.py' and registers feature extractor from Step6.  
