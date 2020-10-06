@@ -113,7 +113,7 @@ Step2: Clone the repository
 ```git clone https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score.git```
 
 ### Suggestion
-Modify some setting in model_lib_v2.py (Usually under C:\Python36\Lib\site-packages\object_detection).
+Modify some setting in model_lib_v2.py (Usually under C:\Python36\Lib\site-packages\object_detection\).
 * Replace checkpoint_max_to_keep in function train_loop() with a bigger value to keep more number of models during training.
 * Replace max_outputs in function eager_train_step() with 0 to avoid the summary events generated while training taking up too much disk space.
 
@@ -130,12 +130,13 @@ Before starting training the object detection model, the objects in the images m
 
 ### Inference
 Step1: Copy object detection and classification models from [train](#train) to the folder where one want to place the models.  
-Step2: Open './defect_detection', set the model path and some necessary parameters in the configuration for inference. For more information, please refer to [defect detection README.md](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/defect_detection/README.md).
+Step2: Open './defect_detection_with_severity_score/', set the model path and some necessary parameters in the configuration for inference. For more information, please refer to [defect detection README.md](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/defect_detection/README.md).
 
 ## Acknowledgements
 [Google object detection api](https://github.com/tensorflow/models/tree/master/research/object_detection)  
 [TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10)  
 [TensorFlow 2 Object Detection API tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/)  
+[LabelImg](https://github.com/tzutalin/labelImg)
 [AWS Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)  
 
 ## About SOI
