@@ -133,11 +133,13 @@ Step1: Copy object detection and classification models from [train](#train) to t
 Step2: Open './defect_detection_with_severity_score/', set the model path and some necessary parameters in the configuration for inference. For more information, please refer to [defect detection README.md](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/defect_detection/README.md).
 
 ## Acknowledgements
+[AWS Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)  
 [Google object detection api](https://github.com/tensorflow/models/tree/master/research/object_detection)  
+[LabelImg](https://github.com/tzutalin/labelImg)  
 [TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10)  
 [TensorFlow 2 Object Detection API tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/)  
-[LabelImg](https://github.com/tzutalin/labelImg)  
-[AWS Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)  
+ 
+
 
 ## About SOI
 This project is developed by [SOI](http://www.soinc.com.tw/en/).  
