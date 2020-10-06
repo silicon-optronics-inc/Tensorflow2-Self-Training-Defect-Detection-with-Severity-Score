@@ -1,2 +1,0 @@
-python inference.py
-pause
