@@ -19,6 +19,8 @@ In addition, due to the differences in the image features and complexity of indu
   - [LabelImg](#labelimg)
   - [Train](#train)
   - [Inference](#inference)
+- [Acknowledgements](#acknowledgements)
+- [About SOI](#about-soi)
 
 ## File Directory Description
 ```
