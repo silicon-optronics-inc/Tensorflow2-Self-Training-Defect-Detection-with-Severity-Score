@@ -61,3 +61,15 @@ Step 2. Open 'inference/config.ini' and set some parameters
 * gpu_memory_fraction: A value between 0 and 1 that indicates what fraction of the available GPU memory to pre-allocate for each process.
 
 Step 3. Run 'inference/run.bat', result will be saved under log_path just specified.
+
+## Self-Define Model Structure
+Since tensorflow2 object detection api now import proposal feature extractor and box classifier feature extractor from tensorflow.keras, the following programs need to be modified or created. If you have no idea how to modify the files, you can refer to other files in the same folder.  
+Before starting, please enter 'site-packages' folder under the path where python is installed. (Usually it is 'C:\Python36\Lib\site-packages')
+Step 1. Create a python file with self-defined keras model structure under '.\tensorflow\python\keras\applications'.  
+Step 2. Create a folder with __init__.py inside under '.\tensorflow\keras\applications'.  
+Step 3. Open '.\tensorflow\keras\applications\__init__.py', then import model and folder from Step1 and Step2.  
+Step 4. Open '.\tensorflow\python\keras\api\_v1\keras\applications\__init__.py' and import model from Step1.  
+Step 5. Create a python file under '.\object_detection\models\keras_models' that the function return the model from Step3.
+Step 6. Create a feature extractor file under '.\object_detection\models' that import function from Step5.
+Step 7. Open '.\object_detection\builders\model_builder.py' and registers feature extractor from Step6.
+Step 8. The custom feature extractor can now be used by modifying the 'feature_extractor\type' in the config file.
