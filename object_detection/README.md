@@ -65,6 +65,7 @@ Step 3. Run 'inference/run.bat', result will be saved under log_path just specif
 ## Self-Define Model Structure
 Since tensorflow2 object detection api now import proposal feature extractor and box classifier feature extractor from tensorflow.keras, the following programs need to be modified or created. If you have no idea how to modify the files, you can refer to other files in the same folder.  
 Before starting, please enter 'site-packages' folder under the path where python is installed. (Usually it is 'C:\Python36\Lib\site-packages')  
+
 Step 1. Create a python file with self-defined keras model structure under '.\tensorflow\python\keras\applications'.  
 Step 2. Create a folder with __init__.py inside under '.\tensorflow\keras\applications'.  
 Step 3. Open '.\tensorflow\keras\applications\__init__.py', then import model and folder from Step1 and Step2.  
