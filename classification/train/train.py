@@ -102,11 +102,7 @@ def model_setting():
     if INITIAL_EPOCH != 0:
         model = tf.keras.models.load_model(
             '.\\h5\\'+'%s_%d.h5' % (PROJECT_NAME, INITIAL_EPOCH))
-    else:
-        if MODEL_TYPE == 'CustomizeNet':
-            from model.customizenet import CustomizeNet
-            model = CustomizeNet(input_shape=(MODEL_HEIGHT, MODEL_WIDTH, MODEL_CHANNEL), pooling='avg', classes=CLASSES_NUM)
-            
+    else:       
         if MODEL_TYPE == 'DashNet':
             from model.dashnet import DashNet
             model = DashNet(input_shape=(MODEL_HEIGHT, MODEL_WIDTH, MODEL_CHANNEL), pooling='avg', classes=CLASSES_NUM)
