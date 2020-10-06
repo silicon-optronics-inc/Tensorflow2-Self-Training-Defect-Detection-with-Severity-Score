@@ -136,7 +136,7 @@ Step2: Open './defect_detection_with_severity_score/', set the model path and so
 [Google object detection api](https://github.com/tensorflow/models/tree/master/research/object_detection)  
 [TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10)  
 [TensorFlow 2 Object Detection API tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/)  
-[LabelImg](https://github.com/tzutalin/labelImg)
+[LabelImg](https://github.com/tzutalin/labelImg)  
 [AWS Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)  
 
 ## About SOI
