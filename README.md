@@ -95,7 +95,6 @@ To define own cropping and classification process, please modify the function 'p
 ![Flow Chart of_Defect Detection With Severity Score](https://github.com/silicon-optronics-inc/Object_detection_with_severity_score/blob/master/doc/Flow_Chart_of_Defect_Detection_With_Severity_Score.png)  
 
 
-
 ## Getting Started
 ### Requirements
 * CUDA
@@ -118,7 +117,7 @@ Modify some setting in model_lib_v2.py (Usually under C:\Python36\Lib\site-packa
 
 ## Usage
 ### LabelImg
-Before training the object detection model, the objects in the images must be annotated and saved as XML files in PASCAL VOC format. Tool LabelImg is recommended.  
+Before starting training the object detection model, the objects in the images must be annotated and saved as XML files in PASCAL VOC format. Tool LabelImg is recommended.  
 [LabelImg github](https://github.com/tzutalin/labelImg)  
 [LabelImg download link](https://www.dropbox.com/s/kqoxr10l3rkstqd/windows_v1.8.0.zip?dl=1)  
 
