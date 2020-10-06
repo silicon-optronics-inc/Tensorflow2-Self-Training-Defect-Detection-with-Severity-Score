@@ -131,7 +131,12 @@ Step1: Copy object detection and classification models from [train](#train) to t
 Step2: Open './defect_detection', set the model path and some necessary parameters in the configuration for inference. For more information, please refer to [defect detection README.md](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/defect_detection/README.md).
 
 ## Acknowledgements
-[Google object detection api](https://github.com/tensorflow/models/tree/master/research/object_detection)
-[TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10)
-[TensorFlow 2 Object Detection API tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/)
-[AWS Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)
+[Google object detection api](https://github.com/tensorflow/models/tree/master/research/object_detection)  
+[TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10)  
+[TensorFlow 2 Object Detection API tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/)  
+[AWS Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)  
+
+## About SOI
+## 6 About
+This project is developed by [SOI](http://www.soinc.com.tw/en/).  
+[SOI](http://www.soinc.com.tw/en/)(Silicon Optronics, Inc.) is a CMOS image sensor design company founded in May 2004 and listed in the Taiwan Emerging Market under ticker number 3530. The management team is comprised of seasoned executives with extensive experience in pixel design, image processing algorithms, analog circuits, optoelectronic systems, supply chain management, and sales.
