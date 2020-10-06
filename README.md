@@ -132,3 +132,6 @@ Step2: Open './defect_detection', set the model path and some necessary paramete
 
 ## Acknowledgements
 [Google object detection api](https://github.com/tensorflow/models/tree/master/research/object_detection)
+[TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10)
+[TensorFlow 2 Object Detection API tutorial](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/)
+[AWS Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)
