@@ -238,7 +238,7 @@ def generate_xml(boxes, classes, num_object, img_height, img_width, img_channel,
     """Generate the xml file of the predicted image.
     Args:
       boxes: numpy.ndarray, contains predicted boxes coordinates ([[xmin1 ymin1 xmax1 ymax1], [xmin2 ymin2 xmax2 ymax2], ....])
-      classes: numpy.ndarray, predicted classes of each object, ([class1 class2 class3])
+      classes: numpy.ndarray, predicted classes of each object, ([class1 class2 class3 ...])
       num_object: int, number of objects should be recorded in xml
       img_height, img_width, img_channel: int, image information
       img_filename: str, name of predicted image.
