@@ -47,3 +47,7 @@ Step 1. Open 'inference/config.ini' and set some parameters
 * model_channel: Model channel while training.
 
 Step 2. run 'inference.bat', result will be saved under log_path just specified.
+
+
+## Self-Define Model Structure
+To define own model structure, create a python file and build it under './train/model'. In this case, since the defects cropped from object detection are narrow and with simple feature, we define a shallow network with long rectangular shape
