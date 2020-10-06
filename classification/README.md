@@ -50,4 +50,4 @@ Step 2. run 'inference.bat', result will be saved under log_path just specified.
 
 
 ## Self-Define Model Structure
-To define own model structure, create a python file and build it under './train/model'. In this case, since the defects cropped from object detection are narrow and with simple feature, we define a shallow network with long rectangular shape
+To define own model structure, create a python file and build it under './train/model'. In this case, since the defects cropped from object detection are narrow and have simple feature, we define a shallow network with a long rectangular shape
