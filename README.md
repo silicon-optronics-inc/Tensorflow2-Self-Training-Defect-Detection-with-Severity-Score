@@ -137,6 +137,5 @@ Step2: Open './defect_detection', set the model path and some necessary paramete
 [AWS Automate Data Labeling](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-automated-labeling.html)  
 
 ## About SOI
-## 6 About
 This project is developed by [SOI](http://www.soinc.com.tw/en/).  
 [SOI](http://www.soinc.com.tw/en/)(Silicon Optronics, Inc.) is a CMOS image sensor design company founded in May 2004 and listed in the Taiwan Emerging Market under ticker number 3530. The management team is comprised of seasoned executives with extensive experience in pixel design, image processing algorithms, analog circuits, optoelectronic systems, supply chain management, and sales.
