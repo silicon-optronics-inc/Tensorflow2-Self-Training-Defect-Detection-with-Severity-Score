@@ -90,6 +90,7 @@ Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score
 
 ## Flow of Defect Detection 
 This project first uses object detection to find out the coordinates and types of defects, and then crops the defects according to the type and sends them to the corresponding classification model in the next step, and let the classification model give scores according to the severity of the defects, and finally mark the type, severity and location of each defect on the picture.  
+
 Some of the defects that do not care about the severity can skip the classification model and directly use the object detection score.  
 
 
@@ -126,6 +127,7 @@ Before starting training the object detection model, the objects in the images m
 
 ### Train
 Because we use the output of the first-stage object detection as the input of the second-stage classification model, and the input of the classification model must be a fixed size; hence, when training the second-stage classification model to get the severity score, please crop fixed-size defect features from images to use as training data for classification models.  
+
 A classification model can only score the severity of one defect. In other words, the number of trained classification models must be equal to the number of defect types that you want to give a severity score.  
 For how to train the model, please refer to  
 [Object detection training guide](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/object_detection/README.md)  
