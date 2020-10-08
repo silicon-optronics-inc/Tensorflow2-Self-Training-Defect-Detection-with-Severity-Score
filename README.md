@@ -126,8 +126,7 @@ Before starting training the object detection model, the objects in the images m
 
 ### Train
 Because we use the output of the first-stage object detection as the input of the second-stage classification model, and the input of the classification model must be a fixed size; hence, when training the second-stage classification model to get the severity score, please crop fixed-size defect features from images to use as training data for classification models.  
-One classification model can only score one type of defect's severity. In other words, one must train the number of models equal to the number of defects to give the severity score.
-
+A classification model can only score the severity of one defect. In other words, the number of trained classification models must be equal to the number of defect types that you want to give a severity score
 [Object detection training guide](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/object_detection/README.md)  
 [Classification training guide](https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score/blob/master/classification/README.md)  
 
