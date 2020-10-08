@@ -109,7 +109,6 @@ Some of the defects that do not care about the severity can skip the classificat
 
 ### Installation
 Step1: Follow the official guide to install [Object Detection API with TensorFlow 2](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md).
-
 Step2: Clone the repository
 ```git clone https://github.com/silicon-optronics-inc/Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score.git```
 
