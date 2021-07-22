@@ -1,8 +1,8 @@
 # Defect Detection With Severity Score
-This project combines object detection and classification to detect defects and score them based on severity.
+This project combines object detection(detect defects) and classification(score them based on severity).
 
-In the part of object detection, this project is modified based on tensorflow object detection api to make it more user-friendly and able to perform self-training (auto labeling).
-As for the classification, the severity of the flaw is used as the classification standard, and the corresponding score weights are given to different categories during inference, making the application more flexible.
+In the part of object detection, this project is modified based on [tensorflow object detection api](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md) to make it more user-friendly and able to perform self-training (auto labeling).
+As for classification, [keras](https://keras.io/api/) is used. When training the model, this project divides flaws into several categories according to the severity of them. Then the corresponding score weights(the more serious the higher the weight) are given to different categories during inference to get the severity score, making the application more flexible. For example, if the score weights are [0.2, 0.4, 0.6, 0.8, 1], assuming that flaw 1 gets scores [0, 0.02, 0.08, 0.85, 0.05] for each category, then the final severity score will be 0.2*0 + 0.4*0.02 + ... + 1*0.05 = 0.786
 
 In addition, due to the differences in the image features and complexity of industrial defects and life scenes, the project does not use the built-in API model, but customizes the shallower model structure to avoid overfitting and improve the speed of training and inference. Guide to train and inference with custom model structure will also be mentioned.
 
@@ -92,7 +92,6 @@ Tensorflow2-Self-Training-Defect-Detection-With-Severity-Score
 This project first uses object detection to find out the coordinates and types of defects, and then crops the defects according to the type and sends them to the corresponding classification model in the next step, and let the classification model give scores according to the severity of the defects, and finally mark the type, severity and location of each defect on the picture.  
 
 Some of the defects that do not care about the severity can skip the classification model and directly use the object detection score.  
-
 
 
 ![Flow Chart of_Defect Detection With Severity Score](https://github.com/silicon-optronics-inc/Object_detection_with_severity_score/blob/master/doc/Flow_Chart_of_Defect_Detection_With_Severity_Score.png)  
