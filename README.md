@@ -1,8 +1,9 @@
 # Defect Detection With Severity Score
-This project combines object detection(detect defects) and classification(score them based on severity).
+This project combines object detection to detect defects and classification to score them based on the severity.
 
 In the part of object detection, this project is modified based on [tensorflow object detection api](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2.md) to make it more user-friendly and able to perform self-training (auto labeling).
-As for classification, [keras](https://keras.io/api/) is used. When training the model, this project divides flaws into several categories according to the severity of them. Then the corresponding score weights(the more serious the higher the weight) are given to different categories during inference to get the severity score, making the application more flexible. For example, if the score weights are [0.2, 0.4, 0.6, 0.8, 1], assuming that flaw 1 gets scores [0, 0.02, 0.08, 0.85, 0.05] for each category, then the final severity score will be 0.2*0 + 0.4*0.02 + ... + 1*0.05 = 0.786
+
+As for classification, [keras](https://keras.io/api/) is used. When training the model, this project divides flaws into several categories according to the severity of them. Then the corresponding score weights(the more serious the higher the weight) are given to different categories during inference to get the severity score, making the application more flexible. For example, if the score weights are [0.2, 0.4, 0.6, 0.8, 1], assuming that flaw 1 gets scores [0, 0.02, 0.08, 0.85, 0.05] for each category, then the final severity score will be 0.2 * 0 + 0.4 * 0.02 + ... + 1 * 0.05 = 0.786
 
 In addition, due to the differences in the image features and complexity of industrial defects and life scenes, the project does not use the built-in API model, but customizes the shallower model structure to avoid overfitting and improve the speed of training and inference. Guide to train and inference with custom model structure will also be mentioned.
 
